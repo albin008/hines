@@ -3,10 +3,13 @@ import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaEnvelope } from 'react-icons/fa'; 
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
+import IconButton from '@mui/material/IconButton';
+import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
+import MenuIcon from '@mui/icons-material/Menu';
 import logo from './Images/hines logo png.png';
 import hines_web from './Images/hines_web10mb.mp4';
 import hines_mob from './Images/hines_mob.mp4';
@@ -563,7 +566,9 @@ function AppWrapper() {
     subject: '',
     message: ''
   });
-
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -623,7 +628,7 @@ function AppWrapper() {
     <AppBar position="static" className={`appbar ${isSpecialPage ? 'special-header' : ''}`}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <img className="logo-image" src={logo} alt="Logo" />
-        <Box className="nav-buttons-container" style={{"font-weight": "bold"}}>
+        <Box className="nav-buttons-container" style={{"font-weight": "bold"}} sx={{ display: { xs: 'none', md: 'block' }, fontWeight: 'bold' }}>
           <HomeButton />
           <ProductServiceButton />
           <Link to="/our-team" className="nav-button">OUR TEAM</Link>
@@ -637,14 +642,20 @@ function AppWrapper() {
             ABOUT US
           </a>
         </Box>
-        
-        <Box className="social-icons">
+        <IconButton
+            edge="start"
+            sx={{ display: { xs: 'block', md: 'none' } }}
+            onClick={toggleSidebar}
+          >
+            <MenuIcon />
+          </IconButton>
+        <Box className="social-icons" sx={{ display: { xs: 'none', md: 'flex' }, marginLeft: 'auto' }}>
           <a
             href="https://www.instagram.com/hines_sustainability/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InstagramIcon style={{ "margin-left": "150px" }} />
+            <InstagramIcon />
           </a>
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <FacebookIcon />
@@ -659,11 +670,62 @@ function AppWrapper() {
           >
             <WhatsAppIcon />
           </a>
-          <EmailIcon style={{ "margin-right": "50px" }} onClick={openModal} />
+          <EmailIcon onClick={openModal}/>
         </Box>
       </Toolbar>
     </AppBar>
+    <Drawer
+        anchor="right"
+        open={sidebarOpen}
+        onClose={toggleSidebar}
+        sx={{
+          '& .MuiDrawer-paper': {
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Transparent background
+             // Blurring effect for the transparent drawer
+          }
+        }}
+      >
+        <Box
+          sx={{
+            width: 250,
+            display: 'flex',
+            flexDirection: 'column',
+            padding: 2,
+            color: '#fff' // Set text color to white for better visibility
+          }}
+          role="presentation"
+        >
+          {/* Navigation Links */}
+          <Link to="/" className="nav-button" onClick={toggleSidebar}>HOME</Link>
+          <Link to="/our-team" className="nav-button" onClick={toggleSidebar}>OUR TEAM</Link>
+          <Link to="/blog" className="nav-button" onClick={toggleSidebar}>NEWS</Link>
+          <a 
+            href="/about-us.pdf"
+            download="Hines-About-Us.pdf"
+            className="nav-button"
+            onClick={toggleSidebar}
+          >
+            ABOUT US
+          </a>
 
+          {/* Social Media Icons Inside Drawer */}
+          <Box className="social-icons" sx={{ marginTop: '30px', display: 'flex', justifyContent: 'space-between',"margin-left":"0px" }}>
+            <a href="https://www.instagram.com/hines_sustainability/" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon style={{ color: '#fff' }} />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <FacebookIcon style={{ color: '#fff' }} />
+            </a>
+            <a href="https://www.linkedin.com/company/hineseco/" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon style={{ color: '#fff' }} />
+            </a>
+            <a href="https://wa.me/916364464893?text=Hi, %20I%20am%20interested%20in%20your%20sustainability%20services.%20" target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon style={{ color: '#fff' }} />
+            </a>
+            <EmailIcon onClick={openModal} style={{ color: '#fff' }} />
+          </Box>
+        </Box>
+      </Drawer>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/our-team" element={<OurTeam />} />

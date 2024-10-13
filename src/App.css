@@ -251,7 +251,6 @@ html, body {
   width: 100%;
   z-index: 10;
   padding-top: 0px;
-
   transition: background 0.5s ease;
 }
 
@@ -260,9 +259,43 @@ html, body {
   background-color: transparent !important;
 }
 
+@media (max-width: 768px) {
+  /* Hide the desktop navigation on mobile */
+  .nav-buttons-container {
+    display: flex;
+  }
+  .social-icons {
+    display: none;
+  }
+
+  /* Sidebar menu styling */
+  .MuiDrawer-paper {
+    background-color: transparent !important;
+  }
+
+  /* Mobile menu button styling */
+  .nav-button {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .appbar,.logo-image {
+    margin: 0px;
+    padding:0px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+  }
+
+  .MuiSvgIcon-root {
+    color: #fff; /* Ensure social media icons are white in drawer */
+  }
+}
 .logo-image {
-  margin-top: 20px;
-  margin-left:50px;
+  margin:0px;
   height: auto;
   width: 170px;
   background-size: cover;
@@ -275,9 +308,10 @@ html, body {
 
 .nav-buttons-container {
   display: flex;
-  justify-content: space-evenly; /* Distribute space evenly between the buttons */
-  align-items: center; /* Center the buttons vertically */
-  flex-grow: 1; /* Allow the container to grow */
+  justify-content: center ; /* Center horizontally */
+  align-items: center; /* Align items vertically in the center */
+  width: 100%; /* Ensure it spans the entire width */
+  font-weight: bold;
 }
 
 /* Navigation Buttons */
@@ -313,6 +347,7 @@ html, body {
 .social-icons .MuiSvgIcon-root:hover {
   color: #30e630 !important;
 }
+
 
 .whatsapp-float {
   position: fixed;
@@ -476,7 +511,6 @@ html, body {
 .footer-column {
   display:flex;
   flex-direction: column;
-  flex: 1;
   padding: 0px;
   align-items:center;
 }
@@ -574,12 +608,12 @@ html, body {
 }
 
 .footer-column {
-  flex: 1;
   padding: 0px;
   text-align: left;
 }
-
 .footer-logo {
+  display: flex;
+  align-items: center;
   margin: 0px;
   padding:0px;
   height:200px;
@@ -587,6 +621,7 @@ html, body {
 }
 
 .footer-address {
+  text-align: center;
   margin: 0px;
   font-size:1.25rem;
 }
