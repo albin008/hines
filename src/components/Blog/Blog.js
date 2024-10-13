@@ -13,7 +13,7 @@ function Blog() {
       title: "GARBAGE MANAGEMENT REDUCES POLLUTION BY 26% INKEY AREAS: IIT DELHI STUDY",
       author: "Alice Smith",
       date: "October 4, 2024",
-      content: "A study by the Indian Institute ofTechnology Delhi focused on highlypolluted areas—Jahangirpuri, Rohini, andKarol Bagh—in the national capital for overeight months.",
+      content: "A study by the Indian Institute ofTechnology Delhi focused on highly polluted areas—Jahangirpuri, Rohini, and Karol Bagh—in the national capital for overeight months.",
       image: blogimg1,
       link: "/blog/blog1" 
     },
