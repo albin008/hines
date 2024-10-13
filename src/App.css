@@ -235,13 +235,13 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family:  'Inter', Arial, sans-serif;
+  font-family:  __Inter_0ec1f4, __Inter_Fallback_0ec1f4;
 }
 
 html, body {
   height: 100%;
   margin: 0;
-  font-family:  'Inter', Arial, sans-serif;
+  font-family: __Inter_0ec1f4, __Inter_Fallback_0ec1f4;
 }
 
 /* App Bar Styling */
