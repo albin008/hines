@@ -1,0 +1,110 @@
+/* Sustainability.css */
+img{
+  max-width:950px;
+  height:650px;
+}
+.sustainability-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.sustainability-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #079307; /* Green color for the title */
+  text-align: center;
+}
+
+.sustainability-subtitle {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #079307; /* Green color for subtitles */
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.sustainability-description,
+.sustainability-consulting-description,
+.sustainability-audit-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.sustainability-audit-list,
+.sustainability-benefits-list,
+.sustainability-consulting-list,
+.sustainability-work-list {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.sustainability-audit-list li,
+.sustainability-benefits-list li,
+.sustainability-consulting-list li,
+.sustainability-work-list li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.sustainability-consulting-title {
+  font-size: 1.5em;
+  color: #079307; /* Green color for consulting title */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sustainability-auditing{
+background-color: #ffffff;
+padding: 15px;
+margin-bottom: 30px;
+border-left: 5px solid #079307;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sustainability-conclusion {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.sustainability-call-to-action {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #079307; /* Green color for call to action */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sustainability-title {
+    font-size: 2em;
+  }
+
+  .sustainability-subtitle,
+  .sustainability-consulting-title {
+    font-size: 1.6em;
+  }
+
+  .sustainability-description, 
+  .sustainability-conclusion, 
+  .sustainability-audit-list li,
+  .sustainability-benefits-list li,
+  .sustainability-consulting-list li,
+  .sustainability-work-list li {
+    font-size: 1em;
+  }
+
+  img{
+    border-radius: 15px;
+    width: 100%; /* Full width for all images */
+    width: 400px; /* Consistent max width */
+    height: 350px; /* Maintain aspect ratio */
+  }
+}

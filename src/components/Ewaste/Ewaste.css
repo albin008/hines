@@ -1,0 +1,34 @@
+.ewaste-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.ewaste-title {
+  font-size: 2.5em;
+  color: #079307;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ewaste-intro {
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.ewaste-service {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-left: 5px solid #079307;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ewaste-service h3 {
+  color: #079307;
+  margin-bottom: 10px;
+}
+
+.ewaste-service p {
+  color: #000000;
+}

@@ -1,0 +1,112 @@
+.epr-container {
+  padding: 40px;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.epr-title {
+  text-align: center;
+  color: #079307;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.epr-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.epr-subtitle {
+  font-size: 28px;
+  color: #079307;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.our-epr-services{
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-left: 5px solid #079307;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.epr-services-section h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #005005;
+}
+
+.epr-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #444;
+}
+
+.blog-cards-container {
+  display: flex;
+  justify-content: center; /* Center align the cards horizontally */
+  align-items: stretch;
+  gap: 60px; /* Space between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #079307;
+}
+
+.blog-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .blog-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    max-width: 90%;
+  }
+  img {
+    border-radius: 15px;
+    width: 100%; /* Full width for all images */
+    max-width: 650px; /* Consistent max width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

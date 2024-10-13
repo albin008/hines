@@ -1,0 +1,98 @@
+/* General Team Section Styling */
+.team-section {
+  padding: 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #079307;
+  margin-bottom: 40px;
+}
+
+/* Team Cards Layout */
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Team Card Styling */
+.team-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  height: 600px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Member Image Styling */
+.team-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Team Member Info Styling */
+.team-card .name {
+  font-size: 1.8rem;
+  margin: 0; /* Remove margins for tighter spacing */
+  padding: 0;
+  color: #079307;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team-card .designation {
+  font-size: 1.3rem;
+  color: #41b125;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 5px; /* Reduce margin to close the gap */
+  text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .team-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    max-width: 90%;
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  .team-card .name {
+    font-size: 1.6rem; /* Slightly reduce size for mobile */
+  }
+
+  .team-card .designation {
+    font-size: 1.2rem;
+    margin-top: 3px; /* Further reduce space between name and designation */
+  }
+  .team-card:nth-child(4) .team-image {
+    object-position: bottom; /* Adjusts the image position so more of the upper part is shown */
+  }
+}

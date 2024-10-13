@@ -1,0 +1,106 @@
+/* Battery.css */
+img{
+  max-width:950px;
+  height:650px;
+}
+.battery-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.battery-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #079307;
+  text-align: center;
+}
+
+.battery-subtitle {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #079307;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.battery-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.battery-waste-management{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-left: 5px solid #079307;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.battery-benefits-list {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.battery-benefits-list li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.battery-step-title {
+  font-size: 1.5em;
+  color: #079307;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.battery-step-content {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.battery-container h2,
+.battery-container h3 {
+  font-weight: bold;
+}
+
+.battery-container ul {
+  padding-left: 20px;
+}
+
+.battery-container ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .battery-title {
+    font-size: 2em;
+  }
+
+  .battery-subtitle {
+    font-size: 1.6em;
+  }
+
+  .battery-step-title {
+    font-size: 1.4em;
+  }
+
+  .battery-description, 
+  .battery-step-content, 
+  .battery-benefits-list li {
+    font-size: 1em;
+  }
+  img{
+    border-radius: 15px;
+    width: 100%; /* Full width for all images */
+    width: 400px; /* Consistent max width */
+    height: 50px; /* Maintain aspect ratio */
+  }
+}

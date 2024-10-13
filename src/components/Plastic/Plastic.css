@@ -1,0 +1,95 @@
+/* Plastic.css */
+
+.plastic-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.plastic-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #079307;
+  text-align: center;
+}
+
+.plastic-subtitle {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #079307;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+.plastic-waste-management{
+background-color: #ffffff;
+padding: 15px;
+margin-bottom: 30px;
+border-left: 5px solid #079307;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.plastic-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.plastic-benefits-list {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.plastic-benefits-list li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.plastic-step-title {
+  font-size: 1.5em;
+  color: #079307;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.plastic-step-content {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.plastic-container h2,
+.plastic-container h3 {
+  font-weight: bold;
+}
+
+.plastic-container ul {
+  padding-left: 20px;
+}
+
+.plastic-container ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .plastic-title {
+    font-size: 2em;
+  }
+
+  .plastic-subtitle {
+    font-size: 1.6em;
+  }
+
+  .plastic-step-title {
+    font-size: 1.4em;
+  }
+
+  .plastic-description, 
+  .plastic-step-content, 
+  .plastic-benefits-list li {
+    font-size: 1em;
+  }
+}
