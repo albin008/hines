@@ -497,7 +497,7 @@ function Footer() {
 
       {/* Second Column: Quick Links */}
       <div className="footer-column" >
-        <h3 style={{ textAlign: 'center',"margin-top":"50px",color: '#25D366'}}>QUICK LINKS</h3>
+        <h3 style={{ textAlign: 'center',"margin-top":"50px",color: '#22a308'}}>QUICK LINKS</h3>
         <ul className="footer-links">
         <li style={{"font-weight": "bold","font-size":"1.1rem"}}><ProductServiceButton /></li>
         <li onClick={handleOurTeamClick}><Link to="/our-team" className="nav-button" style={{"font-weight": "bold","font-size":"1rem"}}>OUR TEAM</Link></li>
@@ -515,7 +515,7 @@ function Footer() {
 
       {/* Third Column: Social Icons and Contact Info */}
       <div className="footer-column">
-        <h3 style={{ textAlign: 'center',"margin-top":"50px",color: '#25D366'}}>FOLLOW US</h3>
+        <h3 style={{ textAlign: 'center',"margin-top":"50px",color: '#22a308'}}>FOLLOW US</h3>
         <div className="social-icons" style={{ textAlign: 'center' }}>
           <a href="https://www.instagram.com/hines_sustainability/" target="_blank" rel="noopener noreferrer">
             <InstagramIcon />
@@ -616,7 +616,7 @@ function AppWrapper() {
     if (loading) {
       return (
         <div className="loader-container">
-          <img src={loader} alt="Loading..." className="loader-gif" />
+          <img src={loader} style={{height:'150px',width:'150px'}} alt="Loading..." className="loader-gif" />
         </div>
       );
     }
