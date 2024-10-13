@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import batterydetails from './battery-details.png';
+import batterydetails from './battery-details.jpg';
 import './Battery.css';
 
 function Battery() {
