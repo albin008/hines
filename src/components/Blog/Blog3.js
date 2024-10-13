@@ -27,7 +27,7 @@ function Blog3() {
 
         </div>
         <div className="sections">
-        The ocean is warming, becoming more acidic, and losing oxygen -- these are wellknown<br/> 
+        The ocean is warming, becoming more acidic, and losing oxygen -- these are well known<br/> 
         effects of climate change. What has been less studied is how these changes are<br/>
         affecting contaminants in the seas. A new study titled "Impacts of Climate Change on<br/>
         the Transport, Fate, and Biogeochemistry of Contaminants in Coastal Marine Ecosystems"<br/>

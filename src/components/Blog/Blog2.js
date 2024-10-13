@@ -4,7 +4,7 @@ function Blog2() {
   return (
     
     <div className="epr-container" style={{ backgroundImage: `url(${require('./blogbg.jpg')})` }}>
-      <h1 className="epr-title" style={{"color":"black","font-family":" Georgia, serif"}}>INDIA, NOT CHINA, IS WORLD’S LARGEST PLASTIC EMITTER:STUDY<hr style={{"height":"3px","border":"none","color":"#333","background-color":"#333"}}/></h1>
+      <h1 className="epr-title" style={{"color":"black","font-family":" Georgia, serif"}}>INDIA, NOT CHINA, IS WORLD'S LARGEST PLASTIC EMITTER:STUDY<hr style={{"height":"3px","border":"none","color":"#333","background-color":"#333"}}/></h1>
 
 
       <div style={{display:"flex","justify-content":"center"}}>
@@ -13,8 +13,8 @@ function Blog2() {
 
         <div  style={{ backgroundImage: `url(${require('./blogbg.jpg')})`,"display":"block","margin-top":"70px"}}>
         <div className="sections">
-        New research published in thejournal Nature has said thatIndia is responsible for aroundone-fifth<br/>
-        of global plasticemissions of around 9.3million metric tonnes(Mt) per year.<br/>
+        New research published in the journal Nature has said that India is responsible for around one-fifth<br/>
+        of global plastic emissions of around 9.3 million metric tonnes(Mt) per year.<br/>
         </div>
         <div className="sections">
             The rate places India at the top of the emitters' list, whereas the study places China,<br/>

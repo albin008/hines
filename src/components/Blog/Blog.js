@@ -13,7 +13,7 @@ function Blog() {
       title: "GARBAGE MANAGEMENT REDUCES POLLUTION BY 26% INKEY AREAS: IIT DELHI STUDY",
       author: "Alice Smith",
       date: "October 4, 2024",
-      content: "A study by the Indian Institute ofTechnology Delhi focused on highly polluted areas—Jahangirpuri, Rohini, and Karol Bagh—in the national capital for overeight months.",
+      content: "A study by the Indian Institute of Technology Delhi focused on highly polluted areas—Jahangirpuri, Rohini, and Karol Bagh—in the national capital for overeight months.",
       image: blogimg1,
       link: "/blog/blog1" 
     },
@@ -21,7 +21,7 @@ function Blog() {
       title: "INDIA, NOT CHINA, IS WORLD'S LARGEST PLASTIC EMITTER:STUDY",
       author: "John Doe",
       date: "October 9, 2024",
-      content: "New research published in thejournal Nature has said thatIndia is responsible for aroundone-fifth of global plasticemissions of around 9.3million metric tonnes (Mt) peryear.",
+      content: "New research published in the journal Nature has said thatIndia is responsible for aroundone-fifth of global plastic emissions of around 9.3million metric tonnes (Mt) peryear.",
       image: blogimg2,
       link: "/blog/blog2"
     },
@@ -29,7 +29,7 @@ function Blog() {
       title: "HEAVY METALS IN THE OCEAN BECOME MORE TOXICOctober",
       author: "Jane Johnson",
       date: "October 9, 2024",
-      content: "Toxic trace elements such as lead, mercury,arsenic and cadmium occur naturally in smallquantities in coastal seas.However, humanactivities such as industry and agriculturecontribute significantly larger amounts.",
+      content: "Toxic trace elements such as lead, mercury, arsenic and cadmium occur naturally in small quantities in coastal seas. However, human activities such as industry and agriculture contribute significantly larger amounts.",
       image: blogimg3,
       link: "/blog/blog3"
     }

@@ -13,8 +13,8 @@ function Blog1() {
 
         <div  style={{ backgroundImage: `url(${require('./blogbg.jpg')})`,"display":"block","margin-top":"70px"}}>
         <div className="sections">
-            A study by the Indian Institute ofTechnology Delhi focused on highlypolluted areas—<br/>
-            Jahangirpuri, Rohini, and Karol Bagh—in the national capital for overeight months, <br/>
+            A study by the Indian Institute of Technology Delhi focused on highly polluted areas—<br/>
+            Jahangirpuri, Rohini, and Karol Bagh—in the national capital for over eight months, <br/>
             suggests better garbage management and reduction of pollutant would help in reducing pollution.<br/>
         </div>
         <div className="sections">
@@ -29,9 +29,9 @@ function Blog1() {
         from sources such as garbage burning and dust in urban areas of Delhi<br/>
         </div>
         <div className="sections">
-        The study focused on three major pollutionhotspots—Jahangirpuri, Rohini, and Karol Bagh—over <br/>
-        an eight-month period, using portable low-cost sensors (PLCS) alongside regulatory-gradeContinuous<br/>
-         Ambient Air Quality MonitoringStations (CAAQMS).<br/>
+        The study focused on three major pollution hotspots—Jahangirpuri, Rohini, and Karol Bagh—over <br/>
+        an eight-month period, using portable low-cost sensors (PLCS) alongside regulatory-grade Continuous<br/>
+        Ambient Air Quality Monitoring Stations (CAAQMS).<br/>
         </div>
       </div>
     </div>
