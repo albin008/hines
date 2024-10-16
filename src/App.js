@@ -52,6 +52,7 @@ import Landfill from './components/Landfill/Landfill';
 import ESG from './components/ESG/ESG';
 import Carbon from './components/Carbon/Carbon';
 import EwasteAudit from './components/EwasteAudit/EwasteAudit';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import { CONFIG } from "./Utility";
 console.log(CONFIG);
@@ -192,7 +193,10 @@ function MainPage() {
               <li>Companies must ensure proper collection, recycling, and disposal.</li>
               <li>Key regulations include the Plastic Waste Management Rules and E-Waste Management Rules.</li>
               <li>Compliance requires submitting annual reports to authorities.</li>
-              <li>Non-compliance can result in Environmental Compensation(EC)</li>
+              <li>Non-compliance can result in Environmental Compensation(EC).</li>
+              <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+                <strong>Read more</strong><KeyboardArrowRightIcon/>
+              </div>
         </ul>
       </div>
       <div className="product-image">
@@ -212,6 +216,9 @@ function MainPage() {
           <li>Ensure safe handling of hazardous materials to reduce environmental impact and prevent pollution.</li>
           <li>Promote recycling and refurbishing to contribute to resource recovery.</li>
           <li>Support sustainability efforts in the tech industry.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -225,6 +232,9 @@ function MainPage() {
           <li>Ensures compliance with environmental regulations to prevent soil and water contamination.</li>
           <li>Promotes recycling to recover valuable materials such as lead, lithium, and cobalt.</li>
           <li>Contributes to resource conservation and reduces environmental impact.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image battery">
@@ -245,6 +255,9 @@ function MainPage() {
           <li>The process includes segregating, cleaning, and transforming plastic into reusable materials.</li>
           <li>Effective management protects ecosystems and human health.</li>
           <li>It supports sustainability through recycling and resource conservation.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -259,6 +272,9 @@ function MainPage() {
           <li>Transform tires into useful products, such as rubber mulch, fuel, or road surfaces.</li>
           <li>Mitigate pollution and support resource recovery.</li>
           <li>Contribute to a circular economy.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image">
@@ -278,6 +294,9 @@ function MainPage() {
           <li>Prevents environmental contamination by ensuring oil is treated and recycled to reclaim valuable resources like base oils and energy.</li>
           <li>Complies with regulatory standards while promoting sustainability.</li>
           <li>Reduces waste and minimizes the environmental impact of oil disposal.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -291,6 +310,9 @@ function MainPage() {
           <li>Evaluate resource use, waste management, and energy consumption.</li>
           <li>Provide tailored solutions to enhance efficiency and reduce carbon footprints.</li>
           <li>Help organizations boost their reputation, lower costs, and contribute to a healthier planet.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image">
@@ -310,6 +332,9 @@ function MainPage() {
           <li>Aims to divert organic waste from landfills, reducing methane emissions and promoting composting or anaerobic digestion.</li>
           <li>Transforms organic waste into nutrient-rich compost or biogas.</li>
           <li>Supports sustainable practices and contributes to soil health and renewable energy production.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -323,6 +348,9 @@ function MainPage() {
           <li>Involve the collection, transportation, treatment, and disposal of medical waste, including sharps, infectious materials, and pharmaceuticals.</li>
           <li>Minimize environmental impact and reduce the risk of infection and injury while adhering to regulatory standards.</li>
           <li>Protect public health and promote sustainability within the healthcare sector.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image">
@@ -343,6 +371,9 @@ function MainPage() {
           <li>Minimize contamination and protect public health.</li>
           <li>Include monitoring and maintenance to reduce long-term environmental impacts.</li>
           <li>Promote sustainable waste practices.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -356,6 +387,9 @@ function MainPage() {
           <li>Ensure transparency and compliance with regulations.</li>
           <li>Enhance ESG disclosures to improve company reputation and attract investors.</li>
           <li>Promote sustainable practices within organizations.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image">
@@ -375,6 +409,9 @@ function MainPage() {
           <li>Green credits incentivize eco-friendly practices.</li>
           <li>Managing carbon footprints involves assessing and minimizing emissions.</li>
           <li>Together, these strategies promote sustainability and corporate responsibility in addressing climate change.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
     </div>
@@ -389,6 +426,9 @@ function MainPage() {
           <li>It tracks e-waste quantities and recovery rates.</li>
           <li>These efforts support transparent reporting and sustainability goals.</li>
           <li>Accurate auditing optimizes recycling and resource recovery.</li>
+          <div style={{display: 'flex', alignItems: 'center', gap: '1px','color':'#079307' }}>
+            <strong>Read more</strong><KeyboardArrowRightIcon/>
+          </div>
         </ul>
       </div>
       <div className="product-image">
@@ -532,7 +572,7 @@ function Footer() {
           <EmailIcon style={{ cursor: 'pointer' }} />
         </div>
         <div className="footer-contact">
-          <p className="footer-text" style={{"font-size":"1.2rem"}}>EMAIL: INFO@HINES.COM</p>
+          <p className="footer-text" style={{"font-size":"1.2rem"}}>EMAIL: INFO@HINESECO.COM</p>
           <p className="footer-text" style={{"font-size":"1.2rem"}}>PHONE: +91 7259302999</p>
         </div>
       </div>
