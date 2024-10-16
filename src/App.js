@@ -192,7 +192,7 @@ function MainPage() {
               <li>Companies must ensure proper collection, recycling, and disposal.</li>
               <li>Key regulations include the Plastic Waste Management Rules and E-Waste Management Rules.</li>
               <li>Compliance requires submitting annual reports to authorities.</li>
-              <li>Non-compliance can result in Environmental Compensation (EC)</li>
+              <li>Non-compliance can result in Environmental Compensation(EC)</li>
         </ul>
       </div>
       <div className="product-image">
