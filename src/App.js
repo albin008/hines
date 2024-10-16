@@ -168,11 +168,11 @@ function MainPage() {
           </h1>
         </div>
        </div>
-        {detectDeviceType() === "Mobile" && (<video className="background-video-mob" autoPlay loop muted>
+        {detectDeviceType() === "Mobile" && (<video className="background-video-mob" autoPlay loop muted playsinline>
           <source src={hines_mob} type='video/mp4' />
         </video>)}
 
-        {detectDeviceType() === "Desktop" && (<video className="background-video-web" autoPlay loop muted>
+        {detectDeviceType() === "Desktop" && (<video className="background-video-web" autoPlay loop muted playsinline>
           <source src={hines_web} type='video/mp4' />
         </video>)}
 

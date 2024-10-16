@@ -692,7 +692,8 @@ html, body {
   height: 100vh; 
   object-fit: cover;  
   z-index: -1;    
-  overflow: hidden;   
+  overflow: hidden;
+  object-fit: cover;   
 }
 
 /* Default for large screens */
