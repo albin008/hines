@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from './Images/hines logo png.png';
 import hines_web from './Images/hines_web10mb.mp4';
-import hines_mob from './Images/hines_mob.mp4';
+import hines_mob from './Images/hines_web10mb_mob.mp4';
 import reko from './Images/rekosistem.png';
 import sample from './Images/sample.png';
 import epr from './Images/epr.png';
