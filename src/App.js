@@ -53,20 +53,21 @@ import ESG from './components/ESG/ESG';
 import Carbon from './components/Carbon/Carbon';
 import EwasteAudit from './components/EwasteAudit/EwasteAudit';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { Helmet } from "react-helmet";
 
 import { CONFIG } from "./Utility";
 console.log(CONFIG);
 
-const detectDeviceType = () =>
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-    ? 'Mobile'
-    : /(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(
-      navigator.userAgent
-    )
-      ? 'Tablet'
-      : 'Desktop';
+// const detectDeviceType = () =>
+//   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+//     navigator.userAgent
+//   )
+//     ? 'Mobile'
+//     : /(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(
+//       navigator.userAgent
+//     )
+//       ? 'Tablet'
+//       : 'Desktop';
 
 function MainPage() {
 
@@ -162,6 +163,50 @@ function MainPage() {
  
   return (
     <>
+    <Helmet>
+        {/* Title Tag */}
+        <title>HinesEco | E-Waste Recycling & EPR Services in Bangalore</title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="HinesEco offers eco-friendly e-waste recycling, certified EPR compliance, data destruction, and refurbishment services in Bangalore and beyond. Recycle responsibly with us!"
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="e-waste recycling, electronic waste disposal, e-waste management, 
+          EPR services, data destruction, refurbishment, sustainable recycling, 
+          Bangalore recyclers, certified recyclers, eco-friendly waste solutions,
+          best recyclers in Banglore,
+          ewaste recyclers in banglore,
+          ewaste recylrers near me,
+          best ewaste recyclers in banglore,
+          ewaste recyclers banglore,
+          ewaste recyclers in karnataka,
+          
+          e-waste recycling,e-waste management,electronic waste disposal,e-waste recyclers,EPR services,e-waste Bangalore
+          sustainable recycling,data destruction services,
+          eco-friendly waste solutions,certified e-waste recycling,refurbishing electronics,hazardous material management
+          e-waste recycling in India,secure data destruction,IT asset disposal,
+          How to recycle e-waste in Bangalore,Best e-waste recyclers near me,Affordable EPR compliance services in India,
+          Safe disposal of electronic waste,E-waste recycling company for businesses"
+        />
+
+        {/* Open Graph Tags (for Social Media Sharing) */}
+        <meta property="og:title" content="HinesEco | Sustainable E-Waste Recycling Solutions" />
+        <meta property="og:description" content="Eco-friendly and certified e-waste recycling services in Bangalore. Partner with HinesEco for sustainable electronic waste disposal and EPR compliance." />
+        <meta property="og:image" content="https://www.hineseco.com/static/media/eprservices-details.cf028a277ba000d3618c.png" />
+        <meta property="og:url" content="https://hineseco.com" />
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="HinesEco" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:article:published_time" content="2024-12-01T12:00:00Z" />
+        <meta property="og:article:modified_time" content="2024-12-02T08:00:00Z" />
+        <link rel="canonical" href="https://hineseco.com" />
+      </Helmet>
       <div className="header-container">
         <div>
           <h1 className="main-header">
@@ -169,11 +214,11 @@ function MainPage() {
           </h1>
         </div>
        </div>
-        {detectDeviceType() === "Mobile" && (<video className="background-video-mob" autoPlay loop muted playsinline>
+        {/* { (<video className="background-video-mob" autoPlay loop muted playsinline>
           <source src={hines_mob} type='video/mp4' />
-        </video>)}
+        </video>)} */}
 
-        {detectDeviceType() === "Desktop" && (<video className="background-video-web" autoPlay loop muted playsinline>
+        {(<video className="background-video-web top-0 absolute h-screen -z-20 object-cover w-screen" autoPlay loop muted playsinline>
           <source src={hines_web} type='video/mp4' />
         </video>)}
 
